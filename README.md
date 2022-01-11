@@ -3,7 +3,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=RRS-9747&label=Profile%20views&color=0e75b6&style=flat" alt="RRS-9747" /> </p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=RRS-9747&show_icons=true&locale=en" alt="RRS-9747" /></p>
+<img align="left" alt="Stats" src="https://github-readme-stats.vercel.app/api?username=RRS-9747&&show_icons=true&title_color=ffffff&icon_color=bb2acf&text_color=daf7dc&bg_color=263238">
+
+<img align="left" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RRS-9747&theme=blue-green&count_private=true">
 
 - 🔭 I’m currently working on a [HeadDrop plugin](https://github.com/RRS-9747/HeadDrop)
 
