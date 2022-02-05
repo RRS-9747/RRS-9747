@@ -9,7 +9,7 @@
 
 - 🔭 I’m currently working on a [HeadDrop plugin](https://github.com/RRS-9747/HeadDrop)
 
-- 💬 Ask me about **Spigot plugin development, Discord Bot development**
+- 💬 Ask me about **Spigot plugin development, Discord Bot development and Minecraft server development**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
