@@ -7,7 +7,7 @@
 
 
 
-- 🔭 I’m currently working on a [HeadDrop plugin](https://github.com/RRS-9747/HeadDrop)
+- 🔭 I’m currently working on a [Spigot plugin](https://github.com/RRS-9747/EnderPlus)
 
 - 💬 Ask me about **Spigot plugin development, Discord Bot development and Minecraft server development**
 
