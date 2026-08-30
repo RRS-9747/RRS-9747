@@ -21,7 +21,7 @@
 
 ### 🚀 About Me
 
-- 🌐 **Flagship Project**: Core infrastructure & network architect for **[Banglaverse (banglaverse.net)](https://banglaverse.net/)** — high-throughput Velocity proxy clusters, crossplay gateways, and DDoS mitigation.
+- 🌐 **Flagship Project**: Core infrastructure & network architect for **[Banglaverse (banglaverse.net)](https://banglaverse.net/)** — a cloud, game server hosting & domain service provider featuring high-throughput proxy clusters, crossplay gateways, and enterprise DDoS mitigation.
 - 🎮 **Minecraft Architecture**: 9+ years configuring PaperMC, Velocity, Purpur, BungeeCord, GeyserMC/Floodgate (Java & Bedrock crossplay), LuckPerms, GrimAC anti-cheat, and MySQL multi-server sync.
 - 🤖 **Discord Bot Daemons**: Building high-performance bots in **Java & Kotlin (JDA)** with real-time Minecraft chat & RCON sync.
 - 🐧 **Linux & Cloud DevOps**: VPS security hardening (SSH keys, Fail2ban, UFW), Docker Compose stacks, GitHub Actions CI/CD pipelines, and Nginx reverse proxies with SSL.
@@ -90,3 +90,4 @@
   [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCnH2MI4RkbbWQ2V1WZ1s6ug)
 
 </div>
+
