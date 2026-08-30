@@ -75,11 +75,10 @@
 
 ---
 
-### 📊 GitHub Activity & Stats
+### 📊 GitHub Profile Details
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=RRS-9747&theme=tokyonight&background=0d121c&border=10b981&ring=10b981&fire=10b981&currStreakLabel=10b981" alt="GitHub Streak Stats" width="49%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RRS-9747&theme=tokyonight" alt="GitHub Profile Details" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RRS-9747&theme=tokyonight" alt="GitHub Profile Details" width="60%" />
 </p>
 
 ---
@@ -95,6 +94,7 @@
 
 
 </div>
+
 
 
 
