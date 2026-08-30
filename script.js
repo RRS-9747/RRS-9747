@@ -1,13 +1,18 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
-  initParticleMesh();
   initTypewriter();
-  initCounters();
   initScrollReveals();
-  initConfigInspector();
-  initCopyTriggers();
   initMobileMenu();
   initHeaderScroll();
   initFaqAccordion();
+  initCopyTriggers();
+  initConfigInspector();
+  initCounters();
+
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(() => initParticleMesh(), { timeout: 1000 });
+  } else {
+    setTimeout(initParticleMesh, 100);
+  }
 });
 
 function initParticleMesh() {
@@ -407,3 +412,4 @@ function initFaqAccordion() {
     });
   });
 }
+

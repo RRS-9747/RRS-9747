@@ -1493,3 +1493,43 @@ body {
 }
 
 
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+.status-text {
+  color: #065f46;
+  font-weight: 700;
+}
+.text-emerald {
+  color: #047857 !important;
+}
+.role-dynamic {
+  color: #047857;
+  font-weight: 800;
+  border-right: 2px solid #047857;
+}
+.stack-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0;
+}
+code {
+  font-family: var(--font-mono);
+  background: #f1f5f9;
+  color: #0f172a;
+  padding: 0.15rem 0.4rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.88em;
+  border: 1px solid #cbd5e1;
+}
