@@ -1,7 +1,4 @@
-﻿/* ==========================================================================
-   Rabbyer Rahman - Senior Developer & Systems Architect Design System
-   Clean White & Light Green Theme • Zero Gradients • Crisp High Contrast
-   ========================================================================== */
+﻿
 
 :root {
   --bg-base: #ffffff;
@@ -63,13 +60,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--bg-base); }
 ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--emerald); }
 
-/* Ambient Canvas Particle Mesh */
 #canvas-mesh {
   position: fixed;
   top: 0;
@@ -103,7 +98,6 @@ body {
   font-weight: 800;
 }
 
-/* Header Navigation */
 .header {
   position: fixed;
   top: 0;
@@ -226,7 +220,6 @@ body {
   cursor: pointer;
 }
 
-/* Mobile Drawer */
 .mobile-drawer {
   position: fixed;
   top: 70px;
@@ -263,7 +256,6 @@ body {
 }
 .mob-link:hover { color: var(--emerald); }
 
-/* Hero Section */
 .hero-section {
   padding: 140px 0 60px;
   position: relative;
@@ -345,7 +337,6 @@ body {
   margin-bottom: 2.8rem;
 }
 
-/* Button Utilities */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -445,7 +436,6 @@ body {
   gap: 0.45rem;
 }
 
-/* Glass Terminal Hero Widget (Light Theme) */
 .glass-terminal-card {
   background: #ffffff;
   border: 1px solid var(--border-subtle);
@@ -522,7 +512,6 @@ body {
   text-align: right;
 }
 
-/* Live Equalizer Activity Bars */
 .live-activity-box {
   margin-top: 0.5rem;
   padding: 0.85rem 1rem;
@@ -568,7 +557,6 @@ body {
   100% { height: 40%; opacity: 0.6; }
 }
 
-/* Metrics Counter Strip */
 .metrics-strip { margin-top: 4.5rem; }
 .metrics-grid {
   display: grid;
@@ -610,14 +598,13 @@ body {
   font-size: 0.78rem;
   color: var(--text-muted);
 }
-/* Global Section Standards */
+
 .section-block {
   padding: 95px 0;
   position: relative;
   border-top: 1px solid var(--border-subtle);
 }
 
-/* Alternating subtle light-green section tint */
 #services, #architecture, #about {
   background-color: var(--bg-surface-2);
 }
@@ -663,7 +650,6 @@ body {
   line-height: 1.8;
 }
 
-/* Card Base */
 .card {
   background: #ffffff;
   border: 1px solid var(--border-subtle);
@@ -680,7 +666,6 @@ body {
   box-shadow: 0 12px 30px rgba(5, 150, 105, 0.1);
 }
 
-/* Services Bento Grid */
 .services-bento-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -810,7 +795,6 @@ body {
 }
 .link-inline:hover { gap: 0.7rem; color: var(--emerald-dark); }
 
-/* Projects Grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -913,7 +897,6 @@ body {
   border-top: 1px solid var(--border-subtle);
 }
 
-/* Interactive Config Inspector (Light Theme) */
 .code-inspector-container {
   background: #ffffff;
   border: 1px solid var(--border-subtle);
@@ -994,7 +977,6 @@ body {
 }
 .code-block.active { display: block; }
 
-/* Syntax Highlighting */
 .c-dim { color: #64748b; }
 .c-key { color: #38bdf8; font-weight: 500; }
 .c-str { color: #34d399; }
@@ -1002,7 +984,6 @@ body {
 .c-bool { color: #f87171; }
 .c-var { color: #f1f5f9; }
 
-/* Stack Cards Grid */
 .stack-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1020,7 +1001,6 @@ body {
 .stack-card-header i { font-size: 1.3rem; }
 .stack-card-header h4 { font-size: 1.05rem; font-weight: 700; color: var(--text-main); }
 
-/* About Section */
 .about-wrapper { max-width: 860px; margin: 0 auto; }
 .about-card { padding: 3.5rem 3rem; background: #ffffff; }
 .about-title { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.8px; margin: 1rem 0 1.2rem; color: var(--text-main); }
@@ -1043,7 +1023,6 @@ body {
   gap: 0.65rem;
 }
 
-/* Contact Section */
 .contact-box-container { padding: 4rem 3rem; background: var(--bg-surface-2); border-color: var(--border-emerald); }
 .contact-methods-grid {
   display: grid;
@@ -1094,7 +1073,6 @@ body {
 .contact-handle { font-size: 0.95rem; font-weight: 700; margin: 0.15rem 0; word-break: break-word; overflow-wrap: anywhere; color: var(--text-main); }
 .contact-action { font-size: 0.76rem; color: var(--emerald); font-weight: 600; }
 
-/* Footer */
 .site-footer {
   padding: 3rem 0;
   border-top: 1px solid var(--border-subtle);
@@ -1114,7 +1092,6 @@ body {
 .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.86rem; transition: color var(--transition); }
 .footer-links a:hover { color: var(--emerald); }
 
-/* Toast */
 .toast-popup {
   position: fixed;
   bottom: 25px;
@@ -1141,7 +1118,6 @@ body {
   opacity: 1;
 }
 
-/* Scroll Reveal Animations */
 [data-reveal] {
   opacity: 0;
   transform: translateY(28px);
@@ -1152,10 +1128,6 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* ==========================================================================
-   Comprehensive Mobile & Tablet Responsive Optimizations
-   ========================================================================== */
 
 @media (max-width: 992px) {
   .hero-grid {
@@ -1181,7 +1153,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Navigation */
+  
   .header {
     height: 62px;
   }
@@ -1228,7 +1200,7 @@ body {
     color: var(--emerald);
   }
 
-  /* Hero Section */
+  
   .hero-section {
     padding: 95px 0 45px;
   }
@@ -1286,7 +1258,7 @@ body {
     border: 1px solid var(--border-subtle);
   }
 
-  /* Metrics Strip */
+  
   .metrics-strip {
     margin-top: 3rem;
   }
@@ -1308,7 +1280,7 @@ body {
     line-height: 1.3;
   }
 
-  /* Section Standards */
+  
   .section-block {
     padding: 65px 0;
   }
@@ -1322,7 +1294,7 @@ body {
     font-size: 0.92rem;
   }
 
-  /* Cards */
+  
   .card {
     padding: 1.4rem 1.2rem;
   }
@@ -1337,7 +1309,7 @@ body {
     font-size: 0.82rem;
   }
 
-  /* Project Flagship */
+  
   .project-title {
     font-size: 1.15rem;
   }
@@ -1353,7 +1325,7 @@ body {
     font-size: 0.75rem;
   }
 
-  /* Code Inspector */
+  
   .inspector-header {
     padding: 0.4rem 0.6rem;
   }
@@ -1373,7 +1345,7 @@ body {
     line-height: 1.6;
   }
 
-  /* About & Contact */
+  
   .about-card, .contact-box-container {
     padding: 2rem 1.2rem;
   }
@@ -1400,7 +1372,7 @@ body {
     font-size: 0.88rem;
   }
 
-  /* Footer */
+  
   .site-footer {
     padding: 2.2rem 0;
   }
@@ -1418,7 +1390,7 @@ body {
     gap: 1rem 1.2rem;
   }
 
-  /* Toast Notification on Mobile */
+  
   .toast-popup {
     left: 16px;
     right: 16px;
@@ -1448,9 +1420,6 @@ body {
   }
 }
 
-
-
-/* FAQ Accordion Section (SEO Optimized) */
 .faq-accordion-container {
   max-width: 860px;
   margin: 0 auto;

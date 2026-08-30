@@ -1,6 +1,4 @@
-﻿/**
- * Rabbyer Rahman Portfolio - Senior Systems Architect & Full-Stack Engine
- */
+﻿
 
 document.addEventListener('DOMContentLoaded', () => {
   initParticleMesh();
@@ -14,9 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqAccordion();
 });
 
-/* ==========================================================================
-   1. Interactive Particle Network Mesh (Canvas)
-   ========================================================================== */
 function initParticleMesh() {
   const canvas = document.getElementById('canvas-mesh');
   if (!canvas) return;
@@ -71,7 +66,6 @@ function initParticleMesh() {
       ctx.fillStyle = `rgba(5, 150, 105, ${p.alpha * 0.4})`;
       ctx.fill();
 
-      // Connect near particles
       for (let j = i + 1; j < particles.length; j++) {
         const p2 = particles[j];
         const dx = p.x - p2.x;
@@ -88,7 +82,6 @@ function initParticleMesh() {
         }
       }
 
-      // Mouse proximity connection
       if (mouse.x !== null && mouse.y !== null) {
         const mdx = p.x - mouse.x;
         const mdy = p.y - mouse.y;
@@ -111,9 +104,6 @@ function initParticleMesh() {
   render();
 }
 
-/* ==========================================================================
-   2. Dynamic Role Typewriter
-   ========================================================================== */
 function initTypewriter() {
   const el = document.getElementById('typewriter');
   if (!el) return;
@@ -160,9 +150,6 @@ function initTypewriter() {
   tick();
 }
 
-/* ==========================================================================
-   3. Animated Metric Counters
-   ========================================================================== */
 function initCounters() {
   const cards = document.querySelectorAll('.metric-value[data-counter]');
   if (!cards.length) return;
@@ -200,9 +187,6 @@ function initCounters() {
   if (container) observer.observe(container);
 }
 
-/* ==========================================================================
-   4. Scroll Reveal Engine
-   ========================================================================== */
 function initScrollReveals() {
   const revealElements = document.querySelectorAll('[data-reveal]');
   if (!revealElements.length) return;
@@ -219,9 +203,6 @@ function initScrollReveals() {
   revealElements.forEach((el) => observer.observe(el));
 }
 
-/* ==========================================================================
-   5. Interactive Configuration Inspector
-   ========================================================================== */
 function initConfigInspector() {
   const tabs = document.querySelectorAll('.tab-btn');
   const codeBlocks = document.querySelectorAll('.code-block');
@@ -257,9 +238,6 @@ function initConfigInspector() {
   }
 }
 
-/* ==========================================================================
-   6. Copy to Clipboard with Toast Notification
-   ========================================================================== */
 function initCopyTriggers() {
   const triggers = document.querySelectorAll('.copy-btn');
   const toast = document.getElementById('toast');
@@ -288,9 +266,6 @@ function initCopyTriggers() {
   }
 }
 
-/* ==========================================================================
-   7. Mobile Navigation Drawer
-   ========================================================================== */
 function initMobileMenu() {
   const toggle = document.getElementById('menu-toggle');
   const drawer = document.getElementById('mobile-drawer');
@@ -316,9 +291,6 @@ function initMobileMenu() {
   });
 }
 
-/* ==========================================================================
-   8. Header Scroll Behavior
-   ========================================================================== */
 function initHeaderScroll() {
   const navbar = document.getElementById('navbar');
   const navLinks = document.querySelectorAll('.nav-menu-desktop .nav-link');
@@ -353,12 +325,6 @@ function initHeaderScroll() {
   });
 }
 
-
-
-
-/* ==========================================================================
-   9. SEO FAQ Accordion Toggles
-   ========================================================================== */
 function initFaqAccordion() {
   const faqItems = document.querySelectorAll('.faq-item');
   if (!faqItems.length) return;
@@ -383,4 +349,3 @@ function initFaqAccordion() {
     });
   });
 }
-
