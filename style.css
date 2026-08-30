@@ -1,4 +1,4 @@
-
+﻿
 
 :root {
   --bg-base: #ffffff;
@@ -1534,3 +1534,33 @@ code {
   border: 1px solid #cbd5e1;
 }
 
+
+.inspector-code-body code,
+.code-block code {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: inherit !important;
+  font-family: inherit !important;
+}
+.code-block {
+  color: #e2e8f0 !important;
+}
+.c-var {
+  color: #38bdf8 !important;
+}
+.c-key {
+  color: #a78bfa !important;
+}
+.c-str {
+  color: #34d399 !important;
+}
+.c-num {
+  color: #fbbf24 !important;
+}
+.c-bool {
+  color: #f472b6 !important;
+}
+.c-dim {
+  color: #94a3b8 !important;
+}
