@@ -1,0 +1,26 @@
+﻿{
+  "name": "Rabbyer Rahman — Systems & Network Engineer",
+  "short_name": "RRS Portfolio",
+  "description": "Portfolio of Rabbyer Rahman (shishir9747 / rrs.dev) — Senior Systems Engineer, Network Engineer, and Minecraft Server Infrastructure Architect.",
+  "start_url": "/RRS-9747/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#059669",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
