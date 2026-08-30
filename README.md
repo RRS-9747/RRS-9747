@@ -82,8 +82,10 @@
 ### 📊 GitHub Profile Analytics
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RRS-9747&theme=tokyonight" alt="Profile Details" width="49%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=RRS-9747&theme=tokyonight" alt="GitHub Stats" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RRS-9747&theme=tokyonight" alt="Profile Details" width="98%" />
+</p>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=RRS-9747&theme=tokyonight" alt="GitHub Stats" width="52%" />
 </p>
 
 ---
@@ -98,4 +100,5 @@
   [![Email](https://img.shields.io/badge/Email-r.rahman9747@gmail.com-0284C7?style=for-the-badge&logo=gmail&logoColor=white)](mailto:r.rahman9747@gmail.com)
 
 </div>
+
 
