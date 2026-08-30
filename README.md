@@ -30,18 +30,22 @@
 
 ---
 
-### 💻 Languages Used Across All Repositories & Projects
+### 💻 Languages & Active Repositories (Auto-Updated)
 
-| Language | Primary Applications & Repositories | Experience Level |
+<!-- START_LANG_SECTION -->
+
+| Language | Active Repositories & Applications | Experience Level |
 | :--- | :--- | :--- |
-| ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) **Java** | Minecraft Spigot Plugins (`EnderPlus`, `HeadDrop`, `DiscordUtils`, `VillagerTradeLimiter`, `TitleInfo`, `Wallpaper-Haven`), Velocity/PaperMC clusters, JDA Discord Bots | **9+ Years (Expert)** |
-| ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) **Kotlin** | Discord automation daemons (JDA), Ktor microservices, high-performance socket bridges | **Advanced** |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) **JavaScript (ES6+)** | Frontend web development, interactive user interfaces, Node.js scripts | **Expert** |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) **TypeScript** | Next.js 14 full-stack applications, typed API clients | **Proficient** |
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) **HTML5 & CSS3** | Modern responsive websites (`portfolio`, `monetize`), gaming community portals | **9+ Years (Expert)** |
-| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) **Python** | Server management scripts, RCON automation tools, system daemons | **Advanced** |
-| ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) **Bash / Shell / Batch** | Linux server security hardening (`Ubuntu/Debian`), automated cron backups, `W10_RDP` | **Expert** |
-| ![SQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) **SQL (MySQL / SQLite)** | Cross-server rank synchronization, LuckPerms permissions, player data storage | **Expert** |
+| ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) **Java** | [`HeadDrop`](https://github.com/RRS-9747/HeadDrop), [`DiscordUtils`](https://github.com/RRS-9747/DiscordUtils), [`TitleInfo`](https://github.com/RRS-9747/TitleInfo), [`Wallpaper-Haven`](https://github.com/RRS-9747/Wallpaper-Haven), [`EnderPlus`](https://github.com/RRS-9747/EnderPlus) &bull; _Minecraft Spigot Plugins, Velocity Clusters & JDA Discord Bots_ | **9+ Years (Expert)** |
+| ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) **Kotlin** | _Discord Automation Daemons (JDA), Socket Relays & Microservices_ | **Advanced** |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) **JavaScript** | _Interactive Frontend Interfaces, Web APIs & Node.js Daemons_ | **Expert** |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) **TypeScript** | _Next.js 14 Full-Stack Web Applications & Typed SDKs_ | **Proficient** |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) **HTML5 & CSS3** | [`RRS-9747`](https://github.com/RRS-9747/RRS-9747), [`monetize`](https://github.com/RRS-9747/monetize) &bull; _Modern Responsive Websites, Developer Portals & Web Apps_ | **9+ Years (Expert)** |
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) **Python** | _Server Automation Tools, RCON Sockets & System Utilities_ | **Advanced** |
+| ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) **Bash / Shell** | _Linux VPS Hardening (Ubuntu/Debian) & Automated Cron Backups_ | **Expert** |
+| ![Batch](https://img.shields.io/badge/Batch-0078D6?style=flat-square&logo=windows&logoColor=white) **Batchfile** | _Windows System Automation & Quick Deployments_ | **Expert** |
+
+<!-- END_LANG_SECTION -->
 
 ---
 
@@ -94,6 +98,7 @@
 
 
 </div>
+
 
 
 
