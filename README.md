@@ -73,8 +73,11 @@
 ### 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=RRS-9747&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d121c&title_color=10b981&icon_color=10b981&text_color=94a3b8" alt="RRS-9747 GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RRS-9747&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d121c&title_color=10b981&text_color=94a3b8" alt="Top Languages" width="48%" />
+  <img src="https://streak-stats.demolab.com/?user=RRS-9747&theme=tokyonight&background=0d121c&border=10b981&ring=10b981&fire=10b981&currStreakLabel=10b981" alt="GitHub Streak Stats" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RRS-9747&theme=tokyonight" alt="GitHub Profile Details" width="49%" />
+</p>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=RRS-9747&theme=tokyonight" alt="Top Languages" width="49%" />
 </p>
 
 ---
@@ -90,5 +93,6 @@
 
 
 </div>
+
 
 
