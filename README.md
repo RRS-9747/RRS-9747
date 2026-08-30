@@ -85,30 +85,6 @@
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RRS-9747&theme=tokyonight" alt="Profile Details" width="49%" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=RRS-9747&theme=tokyonight" alt="GitHub Stats" width="49%" />
 </p>
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=RRS-9747&theme=tokyonight&utcOffset=6" alt="Productive Time (UTC+6)" width="98%" />
-</p>
-
----
-
-### 📦 Featured Open Source Repositories
-
-<p align="center">
-  <a href="https://github.com/RRS-9747/EnderPlus">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=RRS-9747&repo=EnderPlus&theme=tokyonight" alt="EnderPlus Plugin" width="49%" />
-  </a>
-  <a href="https://github.com/RRS-9747/HeadDrop">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=RRS-9747&repo=HeadDrop&theme=tokyonight" alt="HeadDrop Plugin" width="49%" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/RRS-9747/DiscordUtils">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=RRS-9747&repo=DiscordUtils&theme=tokyonight" alt="DiscordUtils" width="49%" />
-  </a>
-  <a href="https://github.com/RRS-9747/Wallpaper-Haven">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=RRS-9747&repo=Wallpaper-Haven&theme=tokyonight" alt="Wallpaper-Haven" width="49%" />
-  </a>
-</p>
 
 ---
 
