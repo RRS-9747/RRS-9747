@@ -30,24 +30,31 @@
 
 ---
 
-### 🛠️ Tech Stack & Skills
+### 💻 Languages Used Across All Repositories & Projects
+
+| Language | Primary Applications & Repositories | Experience Level |
+| :--- | :--- | :--- |
+| ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) **Java** | Minecraft Spigot Plugins (`EnderPlus`, `HeadDrop`, `DiscordUtils`, `VillagerTradeLimiter`, `TitleInfo`, `Wallpaper-Haven`), Velocity/PaperMC clusters, JDA Discord Bots | **9+ Years (Expert)** |
+| ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) **Kotlin** | Discord automation daemons (JDA), Ktor microservices, high-performance socket bridges | **Advanced** |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) **JavaScript (ES6+)** | Frontend web development, interactive user interfaces, Node.js scripts | **Expert** |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) **TypeScript** | Next.js 14 full-stack applications, typed API clients | **Proficient** |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) **HTML5 & CSS3** | Modern responsive websites (`portfolio`, `monetize`), gaming community portals | **9+ Years (Expert)** |
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) **Python** | Server management scripts, RCON automation tools, system daemons | **Advanced** |
+| ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) **Bash / Shell / Batch** | Linux server security hardening (`Ubuntu/Debian`), automated cron backups, `W10_RDP` | **Expert** |
+| ![SQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) **SQL (MySQL / SQLite)** | Cross-server rank synchronization, LuckPerms permissions, player data storage | **Expert** |
+
+---
+
+### 🛠️ Ecosystem, Frameworks & Infrastructure
 
 <p align="center">
-  <!-- Gaming & Server Engines -->
-  <img src="https://img.shields.io/badge/Velocity_Proxy-000000?style=flat-square&logo=velocity&logoColor=white" />
+  <!-- Game & Server Engines -->
+  <img src="https://img.shields.io/badge/Velocity_Proxy_3.3-000000?style=flat-square&logo=velocity&logoColor=white" />
   <img src="https://img.shields.io/badge/PaperMC-1B1F23?style=flat-square&logo=minecraft&logoColor=white" />
+  <img src="https://img.shields.io/badge/Purpur_Server-8A2BE2?style=flat-square" />
   <img src="https://img.shields.io/badge/GeyserMC_Crossplay-059669?style=flat-square&logo=minecraft&logoColor=white" />
   <img src="https://img.shields.io/badge/Spigot_API-E07A5F?style=flat-square" />
   <img src="https://img.shields.io/badge/1000+_Plugins-10B981?style=flat-square" />
-  <br/>
-  
-  <!-- Languages -->
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" />
   <br/>
 
   <!-- Web & Frameworks -->
@@ -55,29 +62,24 @@
   <img src="https://img.shields.io/badge/Next.js_14-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
   <br/>
 
   <!-- DevOps & Networks -->
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
   <img src="https://img.shields.io/badge/Ubuntu_Linux-E95420?style=flat-square&logo=ubuntu&logoColor=white" />
-  <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nginx_Proxy-009639?style=flat-square&logo=nginx&logoColor=white" />
   <img src="https://img.shields.io/badge/MikroTik_RouterOS-222222?style=flat-square" />
   <img src="https://img.shields.io/badge/WireGuard_VPN-88171A?style=flat-square&logo=wireguard&logoColor=white" />
 </p>
 
 ---
 
-### 📊 GitHub Analytics
+### 📊 GitHub Activity & Stats
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=RRS-9747&theme=tokyonight&background=0d121c&border=10b981&ring=10b981&fire=10b981&currStreakLabel=10b981" alt="GitHub Streak Stats" width="49%" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RRS-9747&theme=tokyonight" alt="GitHub Profile Details" width="49%" />
-</p>
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=RRS-9747&theme=tokyonight" alt="Top Languages" width="49%" />
 </p>
 
 ---
@@ -93,6 +95,7 @@
 
 
 </div>
+
 
 
 
