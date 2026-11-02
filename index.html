@@ -82,15 +82,15 @@ h1{font-size:clamp(46px,7.4vw,92px);line-height:.98;letter-spacing:-.045em;font-
 /* topology */
 .topo{color:var(--ink)}
 .topo svg{width:100%;height:auto;display:block;overflow:visible}
-.topo .edge{stroke:var(--line);stroke-width:1.5;fill:none}
-.topo .flow{stroke:var(--accent);stroke-width:1.8;fill:none;stroke-dasharray:3 11;stroke-linecap:round;animation:flow 1.6s linear infinite}
-.topo .node{fill:var(--surface);stroke:var(--line);stroke-width:1.5}
+.topo .edge{stroke:color-mix(in srgb,var(--line) 75%,transparent);stroke-width:1.5;fill:none}
+.topo .flow{stroke:color-mix(in srgb,var(--accent) 70%,transparent);stroke-width:1.8;fill:none;stroke-dasharray:4 7;stroke-linecap:round;animation:flow 1.8s linear infinite}
+.topo .node{fill:var(--surface);stroke:var(--line);stroke-width:1.5;transition:stroke .3s}
 .topo .core{fill:var(--accent);stroke:none}
 .topo text{font-family:var(--font);font-size:13px;fill:var(--ink)}
-.topo .sub{font-family:var(--mono);font-size:10.5px;fill:var(--muted)}
+.topo .sub{font-family:var(--mono);font-size:10.5px;fill:color-mix(in srgb,var(--accent) 75%,#8ab4f8)}
 .topo .core-t{fill:var(--accent-ink);font-weight:600;font-size:14px}
-.topo .core-s{fill:var(--accent-ink);opacity:.75;font-family:var(--mono);font-size:10.5px}
-@keyframes flow{to{stroke-dashoffset:-14}}
+.topo .core-s{fill:var(--accent-ink);opacity:.85;font-family:var(--mono);font-size:10.5px}
+@keyframes flow{to{stroke-dashoffset:-22}}
 .topo-cap{margin-top:14px;font-size:13px;color:var(--muted)}
 
 /* sections */
@@ -258,6 +258,17 @@ details[open] p{animation:fade .35s ease both}
 @keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,#2FB36B 50%,transparent)}100%{box-shadow:0 0 0 10px color-mix(in srgb,#2FB36B 0%,transparent)}}
 .topo .pkt{fill:var(--accent)}
 
+/* electricity on topology links */
+.topo .spark{fill:none;stroke:#FFFFFF;stroke-width:2.8;stroke-linecap:round;stroke-dasharray:16 84;stroke-dashoffset:16;opacity:0;filter:drop-shadow(0 0 4px #7C8DFF) drop-shadow(0 0 10px #38bdf8)}
+.topo .bolt{fill:none;stroke:#e0f2fe;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round;opacity:0;filter:drop-shadow(0 0 3px #7C8DFF)}
+.js .topo .flow{opacity:.65}
+.js .topo .spark{animation:spark 2.4s linear infinite;animation-delay:var(--sd,0s)}
+@keyframes spark{0%{stroke-dashoffset:16;opacity:1}48%{stroke-dashoffset:-100;opacity:1}50%,100%{stroke-dashoffset:-100;opacity:0}}
+.js .topo .hit{animation:hit 2.4s ease-out infinite;animation-delay:var(--hd,0s)}
+@keyframes hit{0%{stroke:#7C8DFF;filter:drop-shadow(0 0 8px #7C8DFF) drop-shadow(0 0 16px #38bdf8)}20%{stroke:#7C8DFF;filter:drop-shadow(0 0 4px #7C8DFF)}40%,100%{stroke:var(--line);filter:none}}
+.js .topo .core.hit{animation-name:hitcore}
+@keyframes hitcore{0%{filter:drop-shadow(0 0 22px #7C8DFF) drop-shadow(0 0 38px #38bdf8) brightness(1.28)}20%{filter:drop-shadow(0 0 10px #7C8DFF) brightness(1.12)}40%,100%{filter:none}}
+
 /* tech marquee */
 .marquee{border-top:1px solid var(--line);overflow:hidden;padding:20px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
 .marquee .track{display:flex;width:max-content}
@@ -307,7 +318,7 @@ details[open] p{animation:fade .35s ease both}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .topo .flow,.topo .ring,.marquee .track{animation:none}
+  .topo .flow,.topo .ring,.marquee .track,.topo .spark,.topo .hit{animation:none}
   *{transition:none!important}
 }
 </style>
@@ -367,6 +378,19 @@ details[open] p{animation:fade .35s ease both}
           <path class="flow" d="M230 196 C230 240 305 240 305 280" style="animation-delay:-1s"/>
           <path class="flow" d="M180 309 H220" style="animation-delay:-.3s"/>
 
+          <defs>
+            <filter id="zap" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="2.2" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <g class="volt" filter="url(#zap)">
+            <path class="spark" pathLength="100" d="M200 80 V132" style="--sd:0s"/>
+            <path class="spark" pathLength="100" d="M170 196 C170 240 95 240 95 280" style="--sd:1.2s"/>
+            <path class="spark" pathLength="100" d="M230 196 C230 240 305 240 305 280" style="--sd:1.2s"/>
+            <path class="spark" pathLength="100" d="M180 309 H220" style="--sd:0s"/>
+          </g>
+
           <g class="nd" style="--d:350ms">
             <rect class="node" x="110" y="24" width="180" height="56" rx="14"/>
             <text x="200" y="48" text-anchor="middle" font-weight="600">Networking</text>
@@ -374,17 +398,17 @@ details[open] p{animation:fade .35s ease both}
           </g>
           <g class="nd" style="--d:500ms">
             <rect class="ring" x="90" y="132" width="220" height="64" rx="16"/>
-            <rect class="core" x="90" y="132" width="220" height="64" rx="16"/>
+            <rect class="core hit" style="--hd:1.15s" x="90" y="132" width="220" height="64" rx="16"/>
             <text class="core-t" x="200" y="160" text-anchor="middle">DevOps and Linux</text>
             <text class="core-s" x="200" y="178" text-anchor="middle">Hardened VPS, Docker, CI/CD</text>
           </g>
           <g class="nd" style="--d:650ms">
-            <rect class="node" x="10" y="280" width="170" height="58" rx="14"/>
+            <rect class="node hit" style="--hd:2.35s" x="10" y="280" width="170" height="58" rx="14"/>
             <text x="95" y="304" text-anchor="middle" font-weight="600">Minecraft servers</text>
             <text class="sub" x="95" y="322" text-anchor="middle">Velocity, Paper, Geyser</text>
           </g>
           <g class="nd" style="--d:750ms">
-            <rect class="node" x="220" y="280" width="170" height="58" rx="14"/>
+            <rect class="node hit" style="--hd:2.35s" x="220" y="280" width="170" height="58" rx="14"/>
             <text x="305" y="304" text-anchor="middle" font-weight="600">Discord bots</text>
             <text class="sub" x="305" y="322" text-anchor="middle">Java, Kotlin, RCON</text>
           </g>
@@ -815,21 +839,59 @@ class MinecraftBridgeDaemon(private val rcon: RconClient) : ListenerAdapter() {
     });
   });
 
-  // data packets travelling along the topology links
+  // electricity: jagged lightning that rides each charge along the wires
   var SVGNS='http://www.w3.org/2000/svg';
-  [].forEach.call(document.querySelectorAll('.topo .flow'),function(p,i){
-    var d=p.getAttribute('d');
-    [0,1].forEach(function(k){
-      var c=document.createElementNS(SVGNS,'circle');
-      c.setAttribute('r','3.2');c.setAttribute('class','pkt');
-      var m=document.createElementNS(SVGNS,'animateMotion');
-      m.setAttribute('path',d);m.setAttribute('dur','2.6s');
-      m.setAttribute('repeatCount','indefinite');
-      m.setAttribute('begin',(-(i*0.45+k*1.3)).toFixed(2)+'s');
-      c.appendChild(m);
-      p.parentNode.insertBefore(c,p.nextSibling);
-    });
+  var volt=document.querySelector('.topo .volt');
+  var wires=[].map.call(document.querySelectorAll('.topo .spark'),function(p){
+    var b=document.createElementNS(SVGNS,'polyline');
+    b.setAttribute('class','bolt');volt.appendChild(b);
+    var b2=document.createElementNS(SVGNS,'polyline');
+    b2.setAttribute('class','bolt');volt.appendChild(b2);
+    return {p:p,len:p.getTotalLength(),sd:parseFloat(p.style.getPropertyValue('--sd'))||0,b:b,b2:b2};
   });
+  var T=2400,last=0;
+  function jag(w,from,to,amp){
+    from=Math.max(0,from);to=Math.min(w.len,to);
+    if(to-from<2)return '';
+    var n=Math.max(3,Math.round((to-from)/5)),pts=[];
+    for(var k=0;k<=n;k++){
+      var s=from+(to-from)*k/n,a=w.p.getPointAtLength(s),c=w.p.getPointAtLength(Math.min(w.len,s+0.5));
+      var dx=c.x-a.x,dy=c.y-a.y,m=Math.hypot(dx,dy)||1;
+      var off=(k===0||k===n)?0:(Math.random()*2-1)*amp;
+      pts.push((a.x-dy/m*off).toFixed(1)+','+(a.y+dx/m*off).toFixed(1));
+    }
+    return pts.join(' ');
+  }
+  function zap(now){
+    requestAnimationFrame(zap);
+    if(now-last<45)return;last=now;
+    wires.forEach(function(w){
+      var cycle=((now-w.sd*1000)%T+T)%T;
+      var f=cycle/(T*0.48);
+      if(f<=1){
+        var head=w.len*(f*1.15),tail=Math.max(0,head-w.len*0.22-6);
+        w.b.setAttribute('points',jag(w,tail,Math.min(w.len,head),3.5));
+        w.b.style.opacity=(0.6+Math.random()*0.4).toFixed(2);
+        if(Math.random()<0.45){
+          w.b2.setAttribute('points',jag(w,Math.max(0,tail-8),Math.min(w.len,head+4),6));
+          w.b2.style.opacity=(0.25+Math.random()*0.5).toFixed(2);
+        }else{
+          w.b2.style.opacity=0;
+        }
+      }else{
+        w.b.style.opacity=0;
+        if(Math.random()<0.05){
+          w.b2.setAttribute('points',jag(w,0,w.len,2));
+          w.b2.style.opacity=(0.2+Math.random()*0.3).toFixed(2);
+        }else{
+          w.b2.style.opacity=0;
+        }
+      }
+    });
+  }
+  if(volt&&wires.length&&(!window.matchMedia||!window.matchMedia('(prefers-reduced-motion: reduce)').matches)){
+    requestAnimationFrame(zap);
+  }
 
   // stagger index for chips and repo pills
   [].forEach.call(document.querySelectorAll('.chips,.repos'),function(g){
