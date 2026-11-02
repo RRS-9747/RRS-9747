@@ -242,6 +242,49 @@ details[open] p{animation:fade .35s ease both}
 .js .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--rd,0ms)}
 .js .reveal.in{opacity:1;transform:none}
 
+/* extra motion: hero backdrop */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(color-mix(in srgb,var(--ink) 13%,transparent) 1px,transparent 1.2px);background-size:24px 24px;-webkit-mask-image:radial-gradient(ellipse 65% 70% at 72% 45%,#000 15%,transparent 72%);mask-image:radial-gradient(ellipse 65% 70% at 72% 45%,#000 15%,transparent 72%)}
+.hero::after{content:"";position:absolute;z-index:-1;pointer-events:none;width:560px;height:560px;right:-140px;top:-120px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 20%,transparent),transparent 65%);filter:blur(10px)}
+.js .hero::before{animation:gridpan 30s linear infinite}
+.js .hero::after{animation:drift 14s ease-in-out infinite alternate}
+@keyframes gridpan{to{background-position:240px 120px}}
+@keyframes drift{0%{transform:translate(0,0) scale(1)}50%{transform:translate(-90px,70px) scale(1.12)}100%{transform:translate(-30px,140px) scale(.94)}}
+
+/* name shine + status pulse */
+.js .hero .grid > div > h1{background:linear-gradient(100deg,var(--ink) 42%,var(--accent) 50%,var(--ink) 58%);background-size:260% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rise .8s cubic-bezier(.2,.7,.2,1) .15s both,shine 7s 1.4s ease-in-out infinite}
+@keyframes shine{0%{background-position:100% 0}35%,100%{background-position:0 0}}
+.js .dot{animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,#2FB36B 50%,transparent)}100%{box-shadow:0 0 0 10px color-mix(in srgb,#2FB36B 0%,transparent)}}
+.topo .pkt{fill:var(--accent)}
+
+/* tech marquee */
+.marquee{border-top:1px solid var(--line);overflow:hidden;padding:20px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.marquee .track{display:flex;width:max-content}
+.js .marquee .track{animation:marquee 45s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.marquee span{font-family:var(--mono);font-size:14px;color:var(--muted);white-space:nowrap;padding-right:44px;display:inline-flex;align-items:center;gap:12px}
+.marquee span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.7}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* card spotlight */
+.card,.flag{position:relative;isolation:isolate}
+.card::before,.flag::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;pointer-events:none;background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--accent) 11%,transparent),transparent 60%);opacity:0;transition:opacity .3s}
+.card:hover::before,.flag:hover::before{opacity:1}
+
+/* staggered chips on reveal */
+.js .reveal .chips span,.js .reveal .repos a{opacity:0;transform:translateY(6px) scale(.96)}
+.js .reveal.in .chips span,.js .reveal.in .repos a{opacity:1;transform:none;transition:opacity .45s ease,transform .45s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i,0) * 45ms + 250ms)}
+
+/* code tab swap */
+.js .panel.swap pre{animation:codein .45s cubic-bezier(.2,.7,.2,1) both}
+@keyframes codein{from{opacity:0;transform:translateY(8px);filter:blur(2px)}to{opacity:1;transform:none;filter:none}}
+
+/* contact glow */
+.cpanel{position:relative;overflow:hidden;isolation:isolate}
+.cpanel::before{content:"";position:absolute;z-index:-1;pointer-events:none;width:640px;height:640px;right:-220px;top:-320px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 50%,transparent),transparent 62%)}
+.js .cpanel::before{animation:drift 16s ease-in-out infinite alternate}
+
 @media (max-width:900px){
   .hero .grid{grid-template-columns:1fr;gap:56px}
   .card.wide{grid-template-columns:minmax(0,1fr);gap:24px}
@@ -264,7 +307,7 @@ details[open] p{animation:fade .35s ease both}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .topo .flow,.topo .ring{animation:none}
+  .topo .flow,.topo .ring,.marquee .track{animation:none}
   *{transition:none!important}
 }
 </style>
@@ -348,6 +391,13 @@ details[open] p{animation:fade .35s ease both}
         </svg>
         <figcaption class="topo-cap">How the pieces fit: a secure network, a managed server, and the game and bot running on it.</figcaption>
       </figure>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Velocity</span><span>PaperMC</span><span>Purpur</span><span>GeyserMC</span><span>LuckPerms</span><span>Java (JDA)</span><span>Kotlin</span><span>Docker</span><span>GitHub Actions</span><span>Nginx</span><span>MikroTik</span><span>WireGuard</span><span>MySQL</span><span>Ubuntu</span>
+      <span>Velocity</span><span>PaperMC</span><span>Purpur</span><span>GeyserMC</span><span>LuckPerms</span><span>Java (JDA)</span><span>Kotlin</span><span>Docker</span><span>GitHub Actions</span><span>Nginx</span><span>MikroTik</span><span>WireGuard</span><span>MySQL</span><span>Ubuntu</span>
     </div>
   </div>
 
@@ -713,7 +763,9 @@ class MinecraftBridgeDaemon(private val rcon: RconClient) : ListenerAdapter() {
       var on=i===j;
       t.setAttribute('aria-selected',on);
       t.tabIndex=on?0:-1;
-      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+      var pnl=document.getElementById(t.getAttribute('aria-controls'));
+      pnl.hidden=!on;
+      if(on){pnl.classList.remove('swap');void pnl.offsetWidth;pnl.classList.add('swap')}
     });
     fname.textContent=tabs[i].textContent;
     note.textContent=notes[i];
@@ -754,6 +806,36 @@ class MinecraftBridgeDaemon(private val rcon: RconClient) : ListenerAdapter() {
 
   if(!document.documentElement.classList.contains('js'))return;
 
+  // card spotlight follows the pointer
+  [].forEach.call(document.querySelectorAll('.card,.flag'),function(c){
+    c.addEventListener('pointermove',function(e){
+      var r=c.getBoundingClientRect();
+      c.style.setProperty('--mx',(e.clientX-r.left)+'px');
+      c.style.setProperty('--my',(e.clientY-r.top)+'px');
+    });
+  });
+
+  // data packets travelling along the topology links
+  var SVGNS='http://www.w3.org/2000/svg';
+  [].forEach.call(document.querySelectorAll('.topo .flow'),function(p,i){
+    var d=p.getAttribute('d');
+    [0,1].forEach(function(k){
+      var c=document.createElementNS(SVGNS,'circle');
+      c.setAttribute('r','3.2');c.setAttribute('class','pkt');
+      var m=document.createElementNS(SVGNS,'animateMotion');
+      m.setAttribute('path',d);m.setAttribute('dur','2.6s');
+      m.setAttribute('repeatCount','indefinite');
+      m.setAttribute('begin',(-(i*0.45+k*1.3)).toFixed(2)+'s');
+      c.appendChild(m);
+      p.parentNode.insertBefore(c,p.nextSibling);
+    });
+  });
+
+  // stagger index for chips and repo pills
+  [].forEach.call(document.querySelectorAll('.chips,.repos'),function(g){
+    [].forEach.call(g.children,function(ch,i){ch.style.setProperty('--i',Math.min(i,10))});
+  });
+
   // count-up stats
   [].forEach.call(document.querySelectorAll('[data-count]'),function(el){
     var end=+el.getAttribute('data-count'),t0=null,dur=1300;
@@ -781,7 +863,7 @@ class MinecraftBridgeDaemon(private val rcon: RconClient) : ListenerAdapter() {
       if(e.isIntersecting){
         var t=e.target;t.classList.add('in');io.unobserve(t);
         var d=parseInt(t.style.getPropertyValue('--rd'))||0;
-        setTimeout(function(){t.classList.remove('reveal','in');t.style.removeProperty('--rd')},d+900);
+        setTimeout(function(){t.classList.remove('reveal','in');t.style.removeProperty('--rd')},d+1500);
       }
     });
   },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
